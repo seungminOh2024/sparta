@@ -61,28 +61,6 @@
     </style>
 
     <script type="module">
-        // Firebase SDK 라이브러리 가져오기
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
-        import { getFirestore } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-        import { collection, addDoc } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-        import { getDocs } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore.js";
-
-
-        // Firebase 구성 정보 설정
-        const firebaseConfig = {
-            apiKey: "AIzaSyAAP56-_2aJyU8lE2-16KN3gXisgkC6ypM",
-            authDomain: "sparta-1c145.firebaseapp.com",
-            projectId: "sparta-1c145",
-            storageBucket: "sparta-1c145.appspot.com",
-            messagingSenderId: "396412642917",
-            appId: "1:396412642917:web:de07d3f1939dede22b888c",
-            measurementId: "G-P0EZLHEENT"
-        };
-
-
-        // Firebase 인스턴스 초기화
-        const app = initializeApp(firebaseConfig);
-        const db = getFirestore(app);
 
         $("#postingbtn").click(async function () {
             let image = $('#image').val();
